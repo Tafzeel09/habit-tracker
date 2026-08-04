@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Habit Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌸 Habit Tracker</h1>
+<p id="todayDate"></p>
+        <!-- Input Section -->
+
+        <form id="habitForm">
+
+            <input
+                type="text"
+                id="habitInput"
+                placeholder="Enter your habit..."
+                autocomplete="off">
+
+            <button type="submit" id="addBtn">
+
+                Add Habit
+
+            </button>
+        </form>
+
+        <input
+type="text"
+id="searchInput"
+placeholder="Search Habit...">
+        <!-- Statistics -->
+
+        <div class="stats">
+
+            <div class="card">
+
+                <h3>Total Habits</h3>
+
+                <p id="totalCount">0</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Completed</h3>
+
+                <p id="completedCount">0</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Current Streak</h3>
+
+                <p id="streak">0 🔥</p>
+
+            </div>
+<div class="card">
+
+<h3>Pending</h3>
+
+<p id="pendingCount">0</p>
+
+</div>
+        </div>
+
+        <!-- Progress -->
+
+        <div class="progress-section">
+
+            <h3>Today's Progress</h3>
+
+            <div class="progress-bar">
+
+                <div id="progress"></div>
+
+            </div>
+
+        </div>
+
+        <!-- Habit List -->
+
+        <ul id="habitList">
+
+        </ul>
+
+        <!-- Bottom Button -->
+
+        <button id="clearBtn">
+
+            Clear All Habits
+
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
